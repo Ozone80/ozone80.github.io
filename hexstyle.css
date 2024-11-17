@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Dosis;
+    color: red;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+#dateText{
+    position: fixed;
+    top: 45%;
+    font-family: Dosis;
+    font-size: 80px;
+    font-weight: 100;
+    color: white;
+}
+
+#searchBarContainer{
+    position: fixed;
+    align-items: center;
+    top: 65%;
+}
+
+#searchBar{
+    width: 500px;
+    height: 45px;
+    border: solid 3px white;
+    border-radius: 7px;
+    background-color: #4b4b4bb8;
+    color: white;
+    font-family: Dosis;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+
+    position: fixed;
+    top: 5%;
+}
+.clock {
+    background-color: #4b4b4bb8;
+    top: 200px;
+    width: 250px;
+    height: 250px;
+    border-radius: 25%;
+    border: #ffffff solid 5px;
+    box-shadow: 0 0 30px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock span{
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+.clock span b{
+    display: inline-block;
+    font-size: 20px;
+    color:#ff0000;
+    text-shadow: 0 0 10px #ff0000;
+}
+.clock::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #ff0000;
+    z-index: 2;
+}
+.hand{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hand i{
+    /* width: 4px;
+    height: 100px; */
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #ff0000;
+}
+#hour i{
+    height: 75px;
+    width: 4px;
+    background-color: #ff0000;
+}
+#min i{
+    height: 85px;
+    width: 4px;
+    background-color: #ff0000;
+}
+#sec i{
+    height: 90px;
+    width: 2px;
+    background: gray;
+    box-shadow: none;
+}
+
